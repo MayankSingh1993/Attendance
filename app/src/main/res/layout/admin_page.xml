@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:background="#FFFFFF"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                app:srcCompat="@drawable/students"
+                tools:ignore="ContentDescription" />
+
+            <Button
+                android:id="@+id/Man_Stu"
+                style="@style/button_style"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:onClick="manage_stud"
+                android:paddingTop="20px"
+
+                android:text="@string/manage_students"
+                tools:ignore="PxUsage" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="0.05"
+                app:srcCompat="@drawable/fac"
+                tools:ignore="ContentDescription,InefficientWeight" />
+
+            <Button
+                android:id="@+id/Man_Fac"
+                style="@style/button_style"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:onClick="manage_fac"
+                android:paddingTop="20px"
+
+                android:text="@string/manage_faculty"
+                tools:ignore="PxUsage" />
+
+            <Button
+                android:layout_marginTop="70dp"
+                android:id="@+id/view"
+                style="@style/button_style"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:onClick="log_out"
+                android:paddingTop="20px"
+
+                android:text="@string/log_out"
+                tools:ignore="PxUsage" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

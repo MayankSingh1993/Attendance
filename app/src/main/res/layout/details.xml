@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+
+
+    >
+    <EditText
+        android:id="@+id/Sname"
+        android:hint="@string/student_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/editText_style"
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/usn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/editText_style"
+        android:hint="@string/usn" />
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_number"
+        android:layout_gravity="center"
+        style="@style/editText_style"
+        android:inputType="phone" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bu1"
+            style="@style/button_style"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/home"
+            android:layout_alignBottom="@id/home"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:onClick="home_start"
+            android:text="@string/add" />
+
+        <Button
+            android:id="@+id/home"
+            style="@style/button_style"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:clickable="true"
+            android:onClick="Back"
+            android:text="@string/back"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp" />
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:drawSelectorOnTop="false"
+        android:cacheColorHint="#00000000"
+        android:id="@android:id/list"
+        >
+    </ListView>
+</LinearLayout>

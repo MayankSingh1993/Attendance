@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+
+        android:weightSum="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:src="@drawable/students"
+                android:layout_weight="0.24"
+                tools:ignore="ContentDescription,InefficientWeight" />
+
+            <Button
+                android:id="@+id/man_stu"
+                style="@style/button_style"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:onClick="manage_stud"
+                android:paddingTop="20px"
+
+                android:text="@string/manage_students"
+                tools:ignore="PxUsage" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:src="@drawable/markattd"
+                tools:ignore="ContentDescription" />
+
+            <Button
+                android:id="@+id/sin"
+                style="@style/button_style"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:onClick="mark_att"
+                android:paddingTop="20px"
+
+                android:text="@string/mark_attendance"
+                tools:ignore="PxUsage" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:src="@drawable/view1"
+                tools:ignore="ContentDescription" />
+
+            <Button
+                android:id="@+id/view"
+                style="@style/button_style"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:onClick="view_att"
+                android:paddingTop="20px"
+
+                android:text="@string/view_attendance"
+                tools:ignore="PxUsage" />
+
+            <Button
+                android:id="@+id/view2"
+                style="@style/button_style"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:onClick="log_out"
+                android:paddingTop="20px"
+
+                android:text="@string/log_out"
+                tools:ignore="PxUsage" />
+        </LinearLayout>
+    </ScrollView>
+
