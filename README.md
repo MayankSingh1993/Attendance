@@ -1,2 +1,0 @@
-# Attendance
-My college project
