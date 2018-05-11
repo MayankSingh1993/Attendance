@@ -154,7 +154,7 @@ public class AttendanceActivity extends ListActivity {
                     missed=c1.getInt(5);
                     phone=c1.getString(6);
                     try{
-                        sendSMS("+919828400433",phone);
+                        sendSMS("+918279212827",phone);
                     }
                     catch(Exception e)
                     {
@@ -205,7 +205,7 @@ public class AttendanceActivity extends ListActivity {
 
         SmsManager sms = SmsManager.getDefault();
         sms.sendTextMessage(phoneNumber, null, message, sentPI, deliveredPI);
-        Toast.makeText(getApplicationContext(), "Message Sent! to "+phoneNumber, Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "Message is Sent To "+phoneNumber, Toast.LENGTH_LONG).show();
     }
 }
 
